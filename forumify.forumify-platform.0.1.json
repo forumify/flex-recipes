@@ -1,0 +1,15 @@
+{
+  "manifests": {
+    "forumify/forumify-platform": {
+      "manifest": {
+        "bundles": {
+          "Forumify\\ForumifyBundle": [
+            "all"
+          ]
+        }
+      },
+      "files": {},
+      "ref": "6247eee1e9aa1e5a49b333a9cb0f661e9df205fd"
+    }
+  }
+}
