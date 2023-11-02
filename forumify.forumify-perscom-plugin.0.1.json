@@ -3,7 +3,7 @@
     "forumify/forumify-platform": {
       "manifest": {
         "bundles": {
-          "Forumify\\ForumifyBundle": [
+          "Forumify\\PerscomPlugin\\PerscomPluginBundle": [
             "all"
           ]
         },
@@ -12,11 +12,11 @@
         }
       },
       "files": {
-        "config/routes/forumify.yaml": {
+        "config/routes/perscom.yaml": {
           "contents": [
             "forumify:",
-            "    resource: '@ForumifyBundle/config/routes.yaml'",
-            "    name_prefix: forumify_"
+            "    resource: '@PerscomPluginBundle/config/routes.yaml'",
+            "    name_prefix: perscom_"
           ],
           "executable": false
         }
