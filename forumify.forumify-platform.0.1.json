@@ -6,10 +6,22 @@
           "Forumify\\ForumifyBundle": [
             "all"
           ]
+        },
+        "copy-from-recipe": {
+          "config/": "%CONFIG_DIR%/"
         }
       },
-      "files": {},
-      "ref": "6247eee1e9aa1e5a49b333a9cb0f661e9df205fd"
+      "files": {
+        "config/routes/forumify.yaml": {
+          "contents": [
+            "forumify:",
+            "    resource: '@ForumifyBundle/../config/routes.yaml'",
+            "    name_prefix: forumify_"
+          ],
+          "executable": false
+        }
+      },
+      "ref": "62e50f92314e7aeb54cfb39ae3444580913f81a4"
     }
   }
 }
