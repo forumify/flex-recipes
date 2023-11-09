@@ -1,6 +1,6 @@
 {
   "manifests": {
-    "forumify/forumify-platform": {
+    "forumify/forumify-perscom-plugin": {
       "manifest": {
         "bundles": {
           "Forumify\\PerscomPlugin\\PerscomPluginBundle": [
@@ -21,7 +21,7 @@
           "executable": false
         }
       },
-      "ref": "62e50f92314e7aeb54cfb39ae3444580913f81a4"
+      "ref": "12e50f92314e7aeb54cfb39ae3444580913f81a4"
     }
   }
 }
