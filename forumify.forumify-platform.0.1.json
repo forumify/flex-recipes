@@ -16,6 +16,7 @@
             "position": "after_target",
             "target": "/\\.[jt]sx?$/\n));",
             "requires": "symfony/stimulus-bundle",
+            "warn_if_missing": true,
             "content": "\n  console.log('hi');\n"
           }
         ]
