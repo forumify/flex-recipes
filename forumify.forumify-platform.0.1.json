@@ -9,7 +9,16 @@
         },
         "copy-from-recipe": {
           "config/": "%CONFIG_DIR%/"
-        }
+        },
+        "add-lines": [
+          {
+            "file": "assets/bootstrap.js",
+            "position": "after_target",
+            "target": "/\\.[jt]sx?$/\n));",
+            "requires": "symfony/stimulus-bundle",
+            "content": "\n  console.log('hi');\n"
+          }
+        ]
       },
       "files": {
         "config/routes/forumify.yaml": {
