@@ -1,0 +1,20 @@
+{
+  "bundles": {
+    "Forumify\\ForumifyBundle": [
+      "all"
+    ]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  },
+  "add-lines": [
+    {
+      "file": "assets/bootstrap.js",
+      "position": "after_target",
+      "target": "/\\.[jt]sx?$/\n));",
+      "requires": "symfony/stimulus-bundle",
+      "warn_if_missing": true,
+      "content": "\n  console.log('hi');\n"
+    }
+  ]
+}

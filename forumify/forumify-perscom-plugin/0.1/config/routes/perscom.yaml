@@ -1,0 +1,3 @@
+forumify:
+    resource: '@PerscomPluginBundle/config/routes.yaml'
+    name_prefix: perscom_
