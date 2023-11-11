@@ -1,3 +1,0 @@
-forumify:
-    resource: '@ForumifyBundle/config/routes.yaml'
-    name_prefix: forumify_
