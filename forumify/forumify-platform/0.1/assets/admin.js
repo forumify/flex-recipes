@@ -1,4 +1,5 @@
 import { startStimulusApp } from '@symfony/stimulus-bridge';
+import '@forumify/forumify-platform/styles/admin/index.scss'
 import '@phosphor-icons/web/regular';
 
 // Registers Stimulus controllers from controllers.json and in the controllers/ directory
