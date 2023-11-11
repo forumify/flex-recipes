@@ -1,0 +1,10 @@
+{
+    "splits": {
+        "forumify/forumify-platform": [
+            "0.1"
+        ],
+        "forumify/forumify-perscom-plugin": [
+            "0.1"
+        ]
+    }
+}
