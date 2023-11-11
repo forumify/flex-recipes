@@ -5,6 +5,8 @@
         ]
     },
     "copy-from-recipe": {
-        "config/": "%CONFIG_DIR%/"
+        "assets/": "assets/",
+        "config/": "%CONFIG_DIR%/",
+        "webpack.config.js": "webpack.config.js"
     }
 }
