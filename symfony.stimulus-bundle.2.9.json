@@ -1,0 +1,33 @@
+{
+    "manifests": {
+        "symfony/stimulus-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Symfony\\UX\\StimulusBundle\\StimulusBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "assets/": "assets/"
+                },
+                "conflict": {
+                    "symfony/webpack-encore-bundle": "<2.0",
+                    "symfony/flex": "<1.20.0 || >=2.0.0,<2.3.0"
+                }
+            },
+            "files": {
+                "assets/controllers.json": {
+                    "contents": [
+                        "{",
+                        "    \"controllers\": [],",
+                        "    \"entrypoints\": []",
+                        "}",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "2fdd17c6dced7c2e8b5d075615888c0dffedbdac"
+        }
+    }
+}
