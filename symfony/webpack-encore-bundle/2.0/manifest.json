@@ -5,8 +5,7 @@
         ]
     },
     "copy-from-recipe": {
-        "config/": "%CONFIG_DIR%/",
-        "package.json": "package.json"
+        "config/": "%CONFIG_DIR%/"
     },
     "aliases": ["ux", "encore", "webpack", "webpack-encore"],
     "gitignore": [
