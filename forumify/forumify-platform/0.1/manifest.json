@@ -9,5 +9,12 @@
         "config/": "%CONFIG_DIR%/",
         "package.json": "package.json",
         "webpack.config.js": "webpack.config.js"
+    },
+    "add-lines": {
+        "file": "config/packages/doctrine_migrations.yaml",
+        "content": "        'ForumifyDoctrineMigrations': '%kernel.project_dir%/vendor/forumify/forumify-platform/migrations'",
+        "position": "after_target",
+        "target": "migrations_paths:",
+        "requires": "doctrine/migrations"
     }
 }
