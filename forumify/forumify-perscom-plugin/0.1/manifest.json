@@ -1,9 +1,4 @@
 {
-    "bundles": {
-        "Forumify\\PerscomPlugin\\PerscomPluginBundle": [
-            "all"
-        ]
-    },
     "copy-from-recipe": {
         "config/": "%CONFIG_DIR%/"
     }
