@@ -1,2 +1,2 @@
 forumify:
-    resource: '@PerscomPluginBundle/config/routes.yaml'
+    resource: '@ForumifyPerscomPlugin/config/routes.yaml'
