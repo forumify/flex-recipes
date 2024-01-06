@@ -12,9 +12,6 @@
         "webpackencorebundle": "symfony/webpack-encore-bundle"
     },
     "recipes": {
-        "forumify/forumify-perscom-plugin": [
-            "0.1"
-        ],
         "forumify/forumify-platform": [
             "0.1"
         ],
