@@ -5,7 +5,6 @@ security:
         forumify_user_provider:
             entity:
                 class: Forumify\Core\Entity\User
-                property: username
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
@@ -21,6 +20,9 @@ security:
                 path: forumify_core_logout
             login_throttling:
                 max_attempts: 3
+            remember_me:
+                secret: '%kernel.secret%'
+                lifetime: 604800
     access_control:
         - { path: ^/admin, roles: ROLE_ADMIN }
 
