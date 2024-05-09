@@ -10,5 +10,10 @@
         "package.json": "package.json",
         "webpack.config.js": "webpack.config.js"
     },
-    "add-lines": []
+    "composer-scripts": {
+        "forumify:plugins:refresh": "symfony-cmd"
+    },
+    "env": {
+        "DEFAULT_URL": "https://localhost:8000"
+    }
 }
