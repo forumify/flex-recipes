@@ -6,9 +6,14 @@
     },
     "copy-from-recipe": {
         "assets/": "assets/",
+        "bin/": "%BIN_DIR%/",
         "config/": "%CONFIG_DIR%/",
+        "public/": "%PUBLIC_DIR%/",
         "package.json": "package.json",
         "webpack.config.js": "webpack.config.js"
+    },
+    "composer-scripts": {
+        "forumify:plugins:refresh": "symfony-cmd"
     },
     "env": {
         "DEFAULT_URI": "https://localhost:8000"
