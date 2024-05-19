@@ -9,9 +9,14 @@
                 },
                 "copy-from-recipe": {
                     "assets/": "assets/",
+                    "bin/": "%BIN_DIR%/",
                     "config/": "%CONFIG_DIR%/",
+                    "public/": "%PUBLIC_DIR%/",
                     "package.json": "package.json",
                     "webpack.config.js": "webpack.config.js"
+                },
+                "composer-scripts": {
+                    "forumify:plugins:refresh": "symfony-cmd"
                 },
                 "env": {
                     "DEFAULT_URI": "https://localhost:8000"
@@ -65,6 +70,33 @@
                         "",
                         "// register any custom, 3rd party controllers here",
                         "// app.register('some_controller_name', SomeImportedController);",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "bin/console": {
+                    "contents": [
+                        "#!/usr/bin/env php",
+                        "<?php",
+                        "",
+                        "use Forumify\\Core\\ForumifyKernel;",
+                        "use Symfony\\Bundle\\FrameworkBundle\\Console\\Application;",
+                        "",
+                        "if (!is_dir(dirname(__DIR__).'/vendor')) {",
+                        "    throw new LogicException('Dependencies are missing. Try running \"composer install\".');",
+                        "}",
+                        "",
+                        "if (!is_file(dirname(__DIR__).'/vendor/autoload_runtime.php')) {",
+                        "    throw new LogicException('Symfony Runtime is missing. Try running \"composer require symfony/runtime\".');",
+                        "}",
+                        "",
+                        "require_once dirname(__DIR__).'/vendor/autoload_runtime.php';",
+                        "",
+                        "return function (array $context) {",
+                        "    $kernel = new ForumifyKernel($context, dirname(__DIR__));",
+                        "",
+                        "    return new Application($kernel);",
+                        "};",
                         ""
                     ],
                     "executable": false
@@ -148,6 +180,33 @@
                     ],
                     "executable": false
                 },
+                "public/index.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "use Forumify\\Core\\ForumifyKernel;",
+                        "use Forumify\\Plugin\\Application\\PluginManagerRunner;",
+                        "",
+                        "require_once dirname(__DIR__).'/vendor/autoload_runtime.php';",
+                        "",
+                        "return static function (array $context) {",
+                        "    return match ($context['REQUEST_URI']) {",
+                        "        '/plugins' => new PluginManagerRunner($context),",
+                        "        default => new ForumifyKernel($context),",
+                        "    };",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "public/storage/.gitignore": {
+                    "contents": [
+                        "*",
+                        "!.gitignore",
+                        ""
+                    ],
+                    "executable": false
+                },
                 "webpack.config.js": {
                     "contents": [
                         "const Encore = require('@symfony/webpack-encore');",
@@ -190,7 +249,7 @@
                     "executable": false
                 }
             },
-            "ref": "2d5eb7256d0395d3ab88b8d6f68d5e34b25a52b6"
+            "ref": "20460e436e15410c67ed2f60f607d4f415036f35"
         }
     }
 }
