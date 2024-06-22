@@ -1,6 +1,10 @@
 {
     "aliases": {
+        "console": "symfony/console",
         "encore": "symfony/webpack-encore-bundle",
+        "framework-bundle": "symfony/framework-bundle",
+        "frameworkbundle": "symfony/framework-bundle",
+        "routing": "symfony/routing",
         "stimulus": "symfony/stimulus-bundle",
         "stimulus-bundle": "symfony/stimulus-bundle",
         "stimulusbundle": "symfony/stimulus-bundle",
@@ -15,6 +19,15 @@
         "forumify/forumify-platform": [
             "0.1",
             "0.2"
+        ],
+        "symfony/console": [
+            "6.4"
+        ],
+        "symfony/framework-bundle": [
+            "6.4"
+        ],
+        "symfony/routing": [
+            "6.4"
         ],
         "symfony/stimulus-bundle": [
             "2.9"
