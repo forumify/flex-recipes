@@ -17,5 +17,9 @@
     },
     "env": {
         "DEFAULT_URI": "https://localhost:8000"
-    }
+    },
+    "gitignore": [
+        "/%PUBLIC_DIR%/storage/",
+        "/%PUBLIC_DIR%/themes/"
+    ]
 }
