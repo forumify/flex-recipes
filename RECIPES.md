@@ -5,7 +5,7 @@ Additional recipes can be found on the [Main Recipes Repository](https://github.
 | Package | Latest Recipe | Aliases |
 | --- | --- | --- |
 | [api-platform/core](https://packagist.org/packages/api-platform/core) | [3.3](api-platform/core/3.3) |  |
-| [forumify/forumify-platform](https://packagist.org/packages/forumify/forumify-platform) | [0.2](forumify/forumify-platform/0.2) |  |
+| [forumify/forumify-platform](https://packagist.org/packages/forumify/forumify-platform) | [0.3](forumify/forumify-platform/0.3) |  |
 | [symfony/console](https://packagist.org/packages/symfony/console) | [6.4](symfony/console/6.4) | `console` |
 | [symfony/framework-bundle](https://packagist.org/packages/symfony/framework-bundle) | [6.4](symfony/framework-bundle/6.4) | `framework-bundle`, `frameworkbundle` |
 | [symfony/routing](https://packagist.org/packages/symfony/routing) | [6.4](symfony/routing/6.4) | `routing` |
