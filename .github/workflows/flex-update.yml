@@ -9,19 +9,16 @@ defaults:
 jobs:
     flex-update:
         name: Update Flex endpoint
-        runs-on: Ubuntu-20.04
-
+        runs-on: ubuntu-latest
         steps:
-            -
-                name: Checkout
+            -   name: Checkout
                 uses: actions/checkout@v3
                 id: checkout
                 with:
                     fetch-depth: 0
                     token: ${{ secrets.PAT }}
 
-            -
-                name: Install tools
+            -   name: Install tools
                 run: |
                     git config --global user.email ""
                     git config --global user.name "github-action[bot]"
@@ -31,8 +28,7 @@ jobs:
                     cd recipes-checker-main
                     composer install --ansi --no-dev
 
-            -
-                name: Update Flex endpoint
+            -   name: Update Flex endpoint
                 run: |
                     mkdir .github/flex-endpoint
                     git ls-tree HEAD */*/* | php .github/recipes-checker-main/run generate:flex-endpoint ${{ github.repository }} main flex/main .github/flex-endpoint --contrib
