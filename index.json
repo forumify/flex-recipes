@@ -5,6 +5,9 @@
         "framework-bundle": "symfony/framework-bundle",
         "frameworkbundle": "symfony/framework-bundle",
         "routing": "symfony/routing",
+        "schedule": "symfony/scheduler",
+        "scheduler": "symfony/scheduler",
+        "scheduling": "symfony/scheduler",
         "stimulus": "symfony/stimulus-bundle",
         "stimulus-bundle": "symfony/stimulus-bundle",
         "stimulusbundle": "symfony/stimulus-bundle",
@@ -23,16 +26,19 @@
             "0.1",
             "0.2",
             "0.3",
-            "0.4"
+            "0.4",
+            "1.0"
         ],
         "symfony/console": [
             "6.4"
         ],
         "symfony/framework-bundle": [
-            "6.4"
+            "6.4",
+            "7.3"
         ],
         "symfony/routing": [
-            "6.4"
+            "6.4",
+            "7.3"
         ],
         "symfony/stimulus-bundle": [
             "2.9"
