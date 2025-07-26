@@ -1,0 +1,5 @@
+{
+    "bundles": {
+        "ApiPlatform\\Symfony\\Bundle\\ApiPlatformBundle": ["all"]
+    }
+}
