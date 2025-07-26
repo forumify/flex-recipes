@@ -19,8 +19,8 @@
         "webpackencorebundle": "symfony/webpack-encore-bundle"
     },
     "recipes": {
-        "api-platform/core": [
-            "3.3"
+        "api-platform/symfony": [
+            "4.0"
         ],
         "forumify/forumify-platform": [
             "0.1",

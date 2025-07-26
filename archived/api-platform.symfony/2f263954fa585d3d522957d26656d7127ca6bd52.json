@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "api-platform/symfony": {
+            "manifest": {
+                "bundles": {
+                    "ApiPlatform\\Symfony\\Bundle\\ApiPlatformBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "2f263954fa585d3d522957d26656d7127ca6bd52"
+        }
+    }
+}
