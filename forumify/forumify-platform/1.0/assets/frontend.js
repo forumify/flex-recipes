@@ -1,5 +1,5 @@
 import { startStimulusApp } from '@symfony/stimulus-bridge';
-import '@forumify/forumify-platform/frontend.js';
+import frontend from '@forumify/forumify-platform/frontend.js';
 
 // Registers Stimulus controllers from controllers.json and in the controllers/ directory
 export const app = startStimulusApp(require.context(
@@ -8,5 +8,6 @@ export const app = startStimulusApp(require.context(
   /\.[jt]sx?$/
 ));
 
+frontend(app);
 // register any custom, 3rd party controllers here
 // app.register('some_controller_name', SomeImportedController);
