@@ -34,11 +34,11 @@
         ],
         "symfony/framework-bundle": [
             "6.4",
-            "7.3"
+            "7.4"
         ],
         "symfony/routing": [
             "6.4",
-            "7.3"
+            "7.4"
         ],
         "symfony/stimulus-bundle": [
             "2.9"
