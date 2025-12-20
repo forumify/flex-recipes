@@ -1,0 +1,11 @@
+{
+    "manifests": {
+        "symfony/scheduler": {
+            "manifest": {
+                "composer-scripts": []
+            },
+            "files": [],
+            "ref": "fcf4c7c5de086304eed5e07e699ff91b5a95ca60"
+        }
+    }
+}
