@@ -1,3 +1,4 @@
 {
-    "aliases": ["schedule", "scheduling"]
+    "aliases": ["schedule", "scheduling"],
+    "composer-scripts": {}
 }
