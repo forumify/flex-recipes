@@ -1,0 +1,28 @@
+{
+    "manifests": {
+        "symfony/security-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Symfony\\Bundle\\SecurityBundle\\SecurityBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/security.yaml": {
+                    "contents": [
+                        "_security_logout:",
+                        "    resource: security.route_loader.logout",
+                        "    type: service",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "f2abe13c87f41fd4ce3703d9985facc2a8ef6079"
+        }
+    }
+}

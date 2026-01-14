@@ -8,6 +8,9 @@
         "schedule": "symfony/scheduler",
         "scheduler": "symfony/scheduler",
         "scheduling": "symfony/scheduler",
+        "security": "symfony/security-bundle",
+        "security-bundle": "symfony/security-bundle",
+        "securitybundle": "symfony/security-bundle",
         "stimulus": "symfony/stimulus-bundle",
         "stimulus-bundle": "symfony/stimulus-bundle",
         "stimulusbundle": "symfony/stimulus-bundle",
@@ -41,6 +44,9 @@
             "7.4"
         ],
         "symfony/scheduler": [
+            "7.4"
+        ],
+        "symfony/security-bundle": [
             "7.4"
         ],
         "symfony/stimulus-bundle": [
